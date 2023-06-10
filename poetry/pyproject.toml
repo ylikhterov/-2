@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "my-todo"
+version = "0.1.0"
+description = ""
+authors = ["likhterovys"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+argparse = "^1.4.0"
+
+[tool.poetry.dev-dependencies]
+safety = "^2.3.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-todo = "my_todo:main"
